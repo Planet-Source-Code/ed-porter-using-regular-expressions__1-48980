@@ -1,0 +1,356 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}}{\colortbl;\red0\green0\blue0;
+\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;
+\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\widctlpar\adjustright \fs22\cgrid \snext0 Normal;}{\s1\keepn\widctlpar\outlinelevel0\adjustright \b\fs22\cgrid \sbasedon0 \snext0 heading 1;}{\*
+\cs10 \additive Default Paragraph Font;}{\s15\sb100\sa100\keepn\widctlpar\outlinelevel1\adjustright \b\fs48\kerning36 \sbasedon0 \snext0 H1;}{\*\cs16 \additive \ul\cf2 \sbasedon10 Hyperlink;}}{\*\listtable{\list\listtemplateid67698689\listsimple
+{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid2096323530}}{\*\listoverridetable{\listoverride\listid2096323530
+\listoverridecount0\ls1}}{\info{\title So what are regular expressions}{\author Ed Porter}{\operator Ed Porter}{\creatim\yr2003\mo10\dy3\hr15\min26}{\revtim\yr2003\mo10\dy3\hr15\min56}{\version2}{\edmins13}{\nofpages7}{\nofwords1353}{\nofchars7713}
+{\*\company MCSE}{\nofcharsws0}{\vern89}}\widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}\pard\plain \widctlpar\adjustright \fs22\cgrid {\b So what are regular expressions?}{ 
+\par 
+\par Regular expressions provide tools for developing complex pattern matching and textual search-and-replace algorithms. Ask any Perl, egrep, awk or sed developer, and they'll tell you that regular expressions are one of the most powerful utilities available 
+for manipulating text and data. By creating patterns to match specific strings, a developer has total control over searching, extracting, or replacing data. In short, to master regular expressions is to master your data.
+\par 
+\par }\pard\plain \s1\keepn\widctlpar\outlinelevel0\adjustright \b\fs22\cgrid {Where Do I Get Them?
+\par }\pard\plain \widctlpar\adjustright \fs22\cgrid {
+\par Every install
+ation of Internet Explorer 5.0 (or above) automatically installs the Windows Script 5.6 for Windows 98, Windows Millennium Edition, and Windows NT 4.0. Microsoft does not explicitly support it for Window 95, but no troubles have been encountered while dev
+eloping this demo (using Visual Basic 6.0 / Win95 / Service Pack 5).
+\par }{\fs20 
+\par }{It can be downloaded at:
+\par 
+\par }{\field{\*\fldinst { HYPERLINK http://www.microsoft.com/downloads/details.aspx?FamilyId=0A8A18F6-249C-4A72-BFCF-FC6AF26DC390&displaylang=en }{\fs20 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b02000000170000006d00000068007400740070003a002f002f007700770077002e006d006900630072006f0073006f00660074002e0063006f006d002f0064006f0077006e006c006f006100640073002f00640065007400610069006c0073002e0061007300700078003f004600
+61006d0069006c007900490064003d00300041003800410031003800460036002d0032003400390043002d0034004100370032002d0042004600430046002d00460043003600410046003200360044004300330039003000260064006900730070006c00610079006c0061006e0067003d0065006e000000e0c9ea79f9bace
+118c8200aa004ba90bda00000068007400740070003a002f002f007700770077002e006d006900630072006f0073006f00660074002e0063006f006d002f0064006f0077006e006c006f006100640073002f00640065007400610069006c0073002e0061007300700078003f00460061006d0069006c007900490064003d00
+300041003800410031003800460036002d0032003400390043002d0034004100370032002d0042004600430046002d00460043003600410046003200360044004300330039003000260064006900730070006c00610079006c0061006e0067003d0065006e0000000001fe}}}{\fldrslt {\cs16\ul\cf2 
+http://www.microsoft.com/downloads/details.aspx?FamilyId=0A8A18F6-249C-4A72-BFCF-FC6AF26DC390&displaylang=en}}}{
+\par 
+\par }\pard\plain \s1\keepn\widctlpar\outlinelevel0\adjustright \b\fs22\cgrid {Help
+\par }\pard\plain \widctlpar\adjustright \fs22\cgrid {
+\par Some excellent resources can be found at:
+\par 
+\par }{\field{\*\fldinst { HYPERLINK http://www.brettb.com/VBScriptRegularExpressions.asp }{\fs20 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b02000000170000003500000068007400740070003a002f002f007700770077002e006200720065007400740062002e0063006f006d002f005600420053006300720069007000740052006500670075006c0061007200450078007000720065007300730069006f006e0073002e00
+6100730070000000e0c9ea79f9bace118c8200aa004ba90b6a00000068007400740070003a002f002f007700770077002e006200720065007400740062002e0063006f006d002f005600420053006300720069007000740052006500670075006c0061007200450078007000720065007300730069006f006e0073002e0061
+00730070000000000100}}}{\fldrslt {\cs16\ul\cf2 http://www.brettb.com/VBScriptRegularExpressions.asp}}}{
+\par }{\field{\*\fldinst { HYPERLINK http://regexlib.com/Default.aspx }{\fs20 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b02000000170000002100000068007400740070003a002f002f00720065006700650078006c00690062002e0063006f006d002f00440065006600610075006c0074002e0061007300700078000000e0c9ea79f9bace118c8200aa004ba90b4200000068007400740070003a002f00
+2f00720065006700650078006c00690062002e0063006f006d002f00440065006600610075006c0074002e0061007300700078000000000000}}}{\fldrslt {\cs16\ul\cf2 http://regexlib.com/Default.aspx}}}{
+\par }{\field{\*\fldinst { HYPERLINK http://msdn.microsoft.com/library/default.asp?URL=/library/en-us/dnclinic/html/scripting051099.asp }{\fs20 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b02000000170000006300000068007400740070003a002f002f006d00730064006e002e006d006900630072006f0073006f00660074002e0063006f006d002f006c006900620072006100720079002f00640065006600610075006c0074002e006100730070003f00550052004c00
+3d002f006c006900620072006100720079002f0065006e002d00750073002f0064006e0063006c0069006e00690063002f00680074006d006c002f0073006300720069007000740069006e0067003000350031003000390039002e006100730070000000e0c9ea79f9bace118c8200aa004ba90bc600000068007400740070
+003a002f002f006d00730064006e002e006d006900630072006f0073006f00660074002e0063006f006d002f006c006900620072006100720079002f00640065006600610075006c0074002e006100730070003f00550052004c003d002f006c006900620072006100720079002f0065006e002d00750073002f0064006e00
+63006c0069006e00690063002f00680074006d006c002f0073006300720069007000740069006e0067003000350031003000390039002e006100730070000000000000}}}{\fldrslt {\cs16\ul\cf2 http://msdn.microsoft.com/library/default.asp?URL=/library/en-us/dnclinic/html/sc
+ripting051099.asp}}}{
+\par 
+\par }\pard\plain \s1\keepn\widctlpar\outlinelevel0\adjustright \b\fs22\cgrid {Tutorial
+\par }\pard\plain \widctlpar\adjustright \fs22\cgrid {
+\par {\pntext\pard\plain\f3\fs22\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls1\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls1\adjustright {
+Click the Patterns button and select a pattern from the drop down list.
+\par {\pntext\pard\plain\f3\fs22\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls1\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls1\adjustright {Click the Test button
+\par {\pntext\pard\plain\f3\fs22\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls1\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls1\adjustright {Note the characters that were selected
+
+\par }\pard \widctlpar\adjustright {
+\par Change the font and color of the selected characters using the Font/Size/Color buttons.
+\par 
+\par }\pard\plain \s1\keepn\widctlpar\outlinelevel0\adjustright \b\fs22\cgrid {Typical Code
+\par }\pard\plain \widctlpar\adjustright \fs22\cgrid {
+\par Option Explicit
+\par 
+\par Private Declare Function ClientToScreen Lib "user32" _
+\par (ByVal hWnd As Long, lpPoint As Any) As Long  ' lpPoint As POINTAPI) As Long
+\par 
+\par Private Declare Function LBItemFromPt Lib "comctl32.dll" _
+\par (ByVal hLB As Long, ByVal ptX As Long, ByVal ptY As Long, _
+\par ByVal bAutoScroll As Long) As Long
+\par 
+\par Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" _
+\par (ByVal hWnd As Long, ByVal wMsg As Long, ByVal wParam As Long, _
+\par lParam As Any) As Long   ' <---
+\par 
+\par Private Declare Sub GetSystemTime Lib "kernel32" (lpSystemTime As SYSTEMTIME)
+\par 
+\par Private Type POINTAPI   ' pt
+\par   X As Long
+\par   Y As Long
+\par End Type
+\par 
+\par Private Type SYSTEMTIME
+\par         wYear As Integer
+\par         wMonth As Integer
+\par         wDayOfWeek As Integer
+\par         wDay As Integer
+\par         wHour As Integer
+\par         wMinute As Integer
+\par         wSecond As Integer
+\par         wMilliseconds As Integer
+\par End Type
+\par 
+\par Private Const WM_SETREDRAW = &HB
+\par 
+\par Dim flgTest As Boolean
+\par 
+\par Private Sub LoadPatterns()
+\par 'Load lstPatterns with RegExp patterns
+\par Dim strItem As String
+\par Dim I As Long, J As Long
+\par 
+\par With lstPatterns
+\par     ' ("[^"]*")
+\par     .Clear
+\par     strItem = "(" + Chr(34) + Chr(91) + "^" + Chr(34) + Chr(93) + "*" + _
+\par                     Chr(34) + ")" + "    Find all characters enclosed by quotes"
+\par     .AddItem strItem
+\par     strItem = "('[^\\r]*)(\\r\\n)?    Highlight all comment lines"
+\par     .AddItem strItem
+\par     strItem = "Dim[^\\w]|Function[^\\w]" + "    Group espressions using " + _
+\par                                                     Chr(34) + Chr(124) + Chr(34)
+\par     .AddItem strItem
+\par     strItem = "Public[^\\w]|Private[^\\w]"
+\par     .AddItem strItem
+\par     strItem = "On[^\\w]|Exit|End|Sub[^\\w]|True[^\\w]|False[^\\w]|For[^\\w]| Next"
+\par     .AddItem strItem
+\par     
+\par     .Top = tbPatterns.Top + tbPatterns.Height + 2
+\par     .Left = tbPatterns.Left
+\par     .Height = .ListCount * 20
+\par     'Find listbox width
+\par     lblMeasure.FontSize = .FontSize
+\par     lblMeasure.FontName = .FontName
+\par     For I = 0 To .ListCount - 1
+\par         lblMeasure.Caption = .List(I)
+\par         If J < lblMeasure.Width + 12 Then J = lblMeasure.Width + 25
+\par     Next I
+\par     .Width = J
+\par End With
+\par 
+\par End Sub
+\par 
+\par Private Sub cmdTest_Click(Index As Integer)
+\par Dim sysTime As SYSTEMTIME
+\par Dim tA As Long, tB As Long, ElapsedTime As Single
+\par 
+\par Me.MousePointer = vbHourglass
+\par With rtbTest
+\par     SendMessage .hWnd, WM_SETREDRAW, False, 0
+\par     flgTest = True
+\par     
+\par     Select Case Index
+\par     Case 0 'Test script
+\par         '--------------------------- Time function --------------------------
+\par         GetSystemTime sysTime
+\par         With sysTime
+\par             tA = Val(.wMinute) * 60000 + Val(.wSecond) * 1000 + Val(.wMilliseconds)
+\par         End With
+\par         '---------------------------------------------------------------------
+\par 
+\par         ColorSyntax rtbTest, txtPattern.Text
+\par         
+\par         '--------------------------- Time function --------------------------
+\par         GetSystemTime sysTime
+\par         With sysTime
+\par             tB = Val(.wMinute) * 60000 + Val(.wSecond) * 1000 + Val(.wMilliseconds)
+\par         End With
+\par         ElapsedTime = (tB - tA) / 1000 'In seconds
+\par         With lblTime
+\par             .Caption = "Time to Format Code: " + Str(ElapsedTime) + " secs."
+\par             .Left = lblMatchesFound.Left + lblMatchesFound.Width + 12
+\par             .Visible = True
+\par             .ZOrder
+\par         End With
+\par         '---------------------------------------------------------------------
+\par         .SelStart = 0
+\par 
+\par     Case 1 'Reset
+\par         .SelStart = 0
+\par         .SelLength = Len(.Text)
+\par         .SelColor = vbBlack
+\par         .SelFontName = "Ms Sans Serif"
+\par         .SelFontSize = 10
+\par         .SelStart = 0
+\par         .Refresh
+\par         lblMatchesFound.Visible = False
+\par         lblTime.Visible = False
+\par     End Select
+\par     
+\par     flgTest = False
+\par     SendMessage .hWnd, WM_SETREDRAW, True, 0
+\par     .Refresh
+\par End With
+\par 
+\par Me.MousePointer = vbArrow
+\par 
+\par End Sub
+\par 
+\par Public Sub ColorSyntax(ByRef objRTB As RichTextBox, Pattern As String)
+\par ' To use add 'Reference' to 'Microsoft VBScript Regular Expressions vx.x
+\par Dim SearchString As String
+\par Dim nRegExp As New RegExp
+\par Dim Matches As MatchCollection
+\par Dim CharMatch As Match
+\par Dim I As Long
+\par 
+\par If Pattern = "" Then Exit Sub 'Prevents latchup
+\par 
+\par 'Tested Patterns
+\par ' ("[^"]*")   Find all characters enclosed by "..."
+\par ' ('[^\\r]*)(\\r\\n)?    Highlight all lines starting with "'" (ie. comments)
+\par 
+\par 'Instructions - vbBlue
+\par ' Dim[^\\w]
+\par ' Function[^\\w]
+\par ' Public[^\\w]
+\par ' Private[^\\w]
+\par ' On[^\\w]
+\par ' Exit
+\par ' End
+\par ' Sub[^\\w]
+\par ' True[^\\w]
+\par ' False[^\\w]
+\par ' For[^\\w]
+\par ' Next
+\par ' If
+\par ' ElseIf
+\par ' Then
+\par 
+\par 
+\par 'nRegExp.Test
+\par SearchString = Pattern
+\par     
+\par     'Parse objRTB using RegExp pattern
+\par     nRegExp.Pattern = SearchString
+\par     nRegExp.Global = True
+\par     'Load the match collection with pointers to the instances within the
+\par     'richtextbox control
+\par     Set Matches = nRegExp.Execute(objRTB.Text)
+\par     'Loop on the collection changing the color in the richtextbox control
+\par     For Each CharMatch In Matches
+\par         'Use the select method and the selection property of the
+\par         'richtextbox control
+\par         With objRTB
+\par             .SelStart = CharMatch.FirstIndex
+\par             .SelLength = CharMatch.Length
+\par             .SelColor = tbFontColor.BackColor
+\par             'Don't use Black as a test color
+\par             If .SelColor = vbBlack Then .SelColor = vbRed
+\par             .SelFontName = lblFontName.Caption
+\par             .SelFontSize = Val(lblFontSize.Caption)
+\par         End With
+\par         '**************************************
+\par         'Count the Number found
+\par         I = I + 1
+\par         '**************************************
+\par     Next
+\par     With lblMatchesFound
+\par         .Caption = Str(I) + " - Matches Found"
+\par         .Visible = True
+\par         .ZOrder
+\par     End With
+\par     
+\par     objRTB.SelLength = 0
+\par     'Get rid of the objects
+\par     Set nRegExp = Nothing
+\par     Set Matches = Nothing
+\par     Set CharMatch = Nothing
+\par 
+\par End Sub
+\par 
+\par 
+\par Private Sub Form_Load()
+\par Dim I As Long
+\par Dim strFile As String
+\par 
+\par With Me
+\par     .Top = 0
+\par     .Left = 0
+\par     .Width = Screen.Width
+\par     .Height = Screen.Height - 400
+\par     .ScaleMode = vbPixels
+\par End With
+\par 
+\par With cmdTest(0)
+\par     .Top = 8
+\par     .Left = 8
+\par     .Width = 65
+\par     .Height = 24
+\par     .Visible = True
+\par     .ZOrder
+\par End With
+\par With cmdTest(1)
+\par     .Top = cmdTest(0).Top
+\par     .Left = 80
+\par     .Width = cmdTest(0).Width
+\par     .Height = cmdTest(0).Height
+\par     .Visible = True
+\par     .ZOrder
+\par End With
+\par With tbPatterns
+\par     .Top = cmdTest(0).Top
+\par     .Left = 152
+\par     .Width = cmdTest(0).Width
+\par     .Height = cmdTest(0).Height
+\par     .Visible = True
+\par     .ZOrder
+\par End With
+\par 
+\par With txtPattern
+\par     .Left = tbPatterns.Left + tbPatterns.Width + 4
+\par     .Top = cmdTest(0).Top
+\par     .Height = cmdTest(0).Height
+\par     .Width = Me.ScaleWidth - .Left - cmdTest(0).Left
+\par End With
+\par 
+\par With rtbTest
+\par     .Top = 64
+\par     .Left = cmdTest(0).Left
+\par     .Width = Me.ScaleWidth - .Left - cmdTest(0).Left
+\par     .Height = Me.ScaleHeight - .Top - cmdTest(0).Top
+\par End With
+\par 
+\par 'Load Font Name(s) info into listbox
+\par With lstFontName
+\par     .Clear
+\par     For I = 0 To Screen.FontCount - 1
+\par       .AddItem Screen.Fonts(I)
+\par     Next I
+\par     .Height = .ListCount * 14
+\par     .ListIndex = 0
+\par     .ZOrder
+\par End With
+\par 
+\par 'Load Font Size(s) into listbox
+\par With lstFontSize
+\par     .Clear
+\par     For I = 8 To 12
+\par         .AddItem I
+\par     Next I
+\par     For I = 14 To 48 Step 2
+\par         If I = 26 Then I = I + 8
+\par         If I = 36 Then I = I + 12
+\par         .AddItem I
+\par     Next I
+\par     .Height = .ListCount * 14
+\par     .ListIndex = 0
+\par     .ZOrder
+\par End With
+\par 
+\par LoadPatterns 'Load Reg Exp test patterns
+\par FormatMnuProperties
+\par 
+\par 'Load test script
+\par strFile = App.Path + "\\Test.rtf"
+\par With rtbTest
+\par     .LoadFile strFile
+\par     .SelStart = 0
+\par     .SelLength = Len(.TextRTF)
+\par     .SelIndent = 10
+\par     .SelRightIndent = 10
+\par     .SelLength = 0
+\par End With
+\par     
+\par lblMatchesFound.Caption = ""
+\par 
+\par End Sub
+\par }}
